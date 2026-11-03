@@ -1,0 +1,2200 @@
+{
+  "scenario": "mixed",
+  "count": 120,
+  "seed": 42,
+  "iterations": 60000,
+  "baseline": {
+    "counts": {
+      "allow": 120,
+      "verifications": 120,
+      "bot_attempts": 91,
+      "legitimate": 29,
+      "legitimate_accepted": 29,
+      "legitimate_challenged": 0,
+      "legitimate_blocked": 0
+    },
+    "verification_ms": 960.02,
+    "elapsed_ms": 960.28,
+    "events": [
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": false
+      }
+    ]
+  },
+  "protected": {
+    "counts": {
+      "challenge": 58,
+      "bot_attempts": 91,
+      "allow": 30,
+      "verifications": 41,
+      "legitimate": 29,
+      "legitimate_accepted": 29,
+      "legitimate_challenged": 9,
+      "legitimate_blocked": 0,
+      "reject": 32
+    },
+    "verification_ms": 327.75,
+    "elapsed_ms": 327.91,
+    "events": [
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 45,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 0,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "allow",
+        "risk": 25,
+        "verified": true,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 100,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-00",
+        "source": "source-00",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-01",
+        "source": "source-01",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-02",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-03",
+        "source": "source-03",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-04",
+        "source": "source-04",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-05",
+        "source": "source-05",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 30,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-06",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-07",
+        "source": "source-07",
+        "legitimate": true,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-08",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-09",
+        "source": "source-09",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-10",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-11",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-12",
+        "source": "source-00",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-13",
+        "source": "source-01",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-14",
+        "source": "source-02",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 70,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-15",
+        "source": "source-03",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-16",
+        "source": "source-04",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-17",
+        "source": "source-05",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 100,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-18",
+        "source": "source-06",
+        "legitimate": false,
+        "decision": "challenge",
+        "risk": 40,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-19",
+        "source": "source-07",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-20",
+        "source": "source-08",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-21",
+        "source": "source-09",
+        "legitimate": true,
+        "decision": "allow",
+        "risk": 15,
+        "verified": true,
+        "accepted": true
+      },
+      {
+        "identity": "user-22",
+        "source": "source-10",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      },
+      {
+        "identity": "user-23",
+        "source": "source-11",
+        "legitimate": false,
+        "decision": "reject",
+        "risk": 85,
+        "verified": false,
+        "accepted": false
+      }
+    ]
+  },
+  "avoided": 79,
+  "avoided_percent": 65.8
+}
