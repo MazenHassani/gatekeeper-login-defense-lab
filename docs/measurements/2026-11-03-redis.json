@@ -1,0 +1,11 @@
+{
+  "store":"redis",
+  "java":"21.0.12.1",
+  "threads":4,
+  "warmup":100,
+  "samples":2000,
+  "scope":"admit call only; no password work; one source/account; local machine",
+  "p50_us":484.843,
+  "p95_us":1115.952,
+  "p99_us":1506.428
+}

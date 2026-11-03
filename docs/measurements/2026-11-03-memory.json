@@ -1,0 +1,11 @@
+{
+  "store":"memory",
+  "java":"21.0.12.1",
+  "threads":4,
+  "warmup":100,
+  "samples":2000,
+  "scope":"admit call only; no password work; one source/account; local machine",
+  "p50_us":58.008,
+  "p95_us":1057.064,
+  "p99_us":2138.093
+}
