@@ -61,9 +61,7 @@ Methodology: identical generated rows and fresh state per pipeline, sequential e
 
 **Local safety:** one synchronous server processes experiments serially, caps each at 200 attempts and rejects unknown request fields. Host and same-origin checks reduce browser-driven misuse; body size is capped at 512 bytes. These are local demo guards, not production hardening. A local process can repeatedly call the server, and slow clients can monopolize its single worker. No raw passwords are logged or returned. Results retain synthetic request metadata only. The server's normal access log contains paths/status codes only.
 
-## Attribution and background
-
-Inspired by [calculusphile’s Instagram reel](https://www.instagram.com/reel/DejYAGbxOAM/). This is an independent educational implementation of the broad early-risk-assessment idea, not a transcript or reproduction of the creator's code or branding.
+## Background reading
 
 Further reading: [OWASP Authentication Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html) and [OWASP Credential Stuffing Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html).
 
