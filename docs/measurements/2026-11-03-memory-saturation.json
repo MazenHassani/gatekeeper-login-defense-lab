@@ -1,0 +1,62 @@
+{
+  "measured_on": "2026-11-03",
+  "java": "21.0.12.1",
+  "heap_limit": "512 MiB",
+  "before_revision": "22c89f5149b92b5e68839b3f837d8b1043ab7bf4",
+  "after_implementation": "bounded expiry index; current source",
+  "method": "Single-threaded direct store API; fill all live entries; 200 denied unique source/pair probes per capacity; fixed clock; no warmup; ascending sizes; no password work or network traffic; not a deployment capacity claim",
+  "before": [
+    {
+      "capacity": 10000,
+      "samples": 200,
+      "p50_us": 266.706,
+      "p95_us": 587.208,
+      "p99_us": 1305.236
+    },
+    {
+      "capacity": 100000,
+      "samples": 200,
+      "p50_us": 2607.118,
+      "p95_us": 2758.087,
+      "p99_us": 2820.907
+    },
+    {
+      "capacity": 1000000,
+      "samples": 200,
+      "p50_us": 21829.369,
+      "p95_us": 28875.176,
+      "p99_us": 30682.46
+    }
+  ],
+  "after": [
+    {
+      "capacity": 10000,
+      "samples": 200,
+      "p50_us": 1.223,
+      "p95_us": 3.842,
+      "p99_us": 17.434
+    },
+    {
+      "capacity": 100000,
+      "samples": 200,
+      "p50_us": 0.518,
+      "p95_us": 0.741,
+      "p99_us": 0.92
+    },
+    {
+      "capacity": 1000000,
+      "samples": 200,
+      "p50_us": 0.495,
+      "p95_us": 0.76,
+      "p99_us": 1.117
+    }
+  ],
+  "regression_100k": {
+    "capacity": 100000,
+    "denied_churn_samples": 1000,
+    "expiry_inspections": 1000,
+    "p50_us": 1.087,
+    "p95_us": 2.339,
+    "p99_us": 6.637
+  }
+}

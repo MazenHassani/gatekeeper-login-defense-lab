@@ -5,7 +5,7 @@
   "warmup":100,
   "samples":2000,
   "scope":"admit call only; no password work; one source/account; local machine",
-  "p50_us":58.008,
-  "p95_us":1057.064,
-  "p99_us":2138.093
+  "p50_us":35.258,
+  "p95_us":1305.397,
+  "p99_us":2287.536
 }

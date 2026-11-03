@@ -7,7 +7,7 @@
 ## Start here
 
 - **Core:** `java/src/main/java/dev/gatekeeper/` — dependency-free local admission API.
-- **Spring:** explicit wrapper around a synchronous Spring Security `AuthenticationManager`; no auto-configured filter or reactive adapter.
+- **Spring:** wrapper around a synchronous Spring Security `AuthenticationManager`, with contract tests and a real `DaoAuthenticationProvider`/BCrypt test. No full Spring Boot login deployment, auto-configured filter or reactive adapter is validated.
 - **Redis:** optional experimental shared rate/failure counters. Tested against standalone Redis 8.0.5, including two JVMs. Concurrency remains local to each process. Cluster/Sentinel/failover deployments are not validated or supported by this release.
 - **Working example:** real Java HTTP endpoint and dashboard using the library, with a synthetic account and real password verification.
 - **Original simulation:** separate Python dashboard in `demo/`; its simulated fingerprints/challenges are not used by the library.
@@ -67,6 +67,8 @@ try (var attempt = gate.admit(source, canonicalAccount)) {
 ```
 
 These last lines are integration pseudocode; a complete runnable application is in [`java/example/ExampleServer.java`](java/example/ExampleServer.java). Always close the permit after the authentication work has actually stopped. Closing on timeout while an external task continues hashing defeats the concurrency bound. Forgotten permits fail closed by exhausting the budget; there is no unsafe automatic permit expiry. An exception/unreported close counts as `ERROR`, releases the permit, and does not invent a credential failure.
+
+The memory store has a hard entry cap and one expiry-index node per retained entry. Its hash table is preallocated at construction to avoid table resizing on admission threads, so choose capacity with startup memory headroom. Each admission checks at most 32 expiry candidates plus its two requested keys, with O(log N) index operations. A full store denies new identities without evicting live state or scanning the whole map. This bounds maintenance work, not JVM/GC or end-to-end latency.
 
 Defaults are not tuned for your traffic: choose limits through shadow traffic, monitoring and false-positive review. Fixed windows permit boundary bursts; no account-wide lockout is applied. Legitimate users behind shared sources can still be denied. Success does not reset failed history; expiration provides recovery.
 

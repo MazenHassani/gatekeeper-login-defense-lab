@@ -41,4 +41,38 @@ class SpringAuthenticationGateTest {
         assertThrows(IllegalArgumentException.class,()->adapter.authenticate(GatekeeperTest.IP,request));
     }
 
+    @Test void realDaoProviderVerifiesPasswordsAndProtectsUnknownUserTimingPath() {
+        var bcrypt = new org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder(4); // Test cost only.
+        var encoded = bcrypt.encode("synthetic-password");
+        var matches = new AtomicInteger();
+        var encoder = new org.springframework.security.crypto.password.PasswordEncoder() {
+            public String encode(CharSequence raw) { return bcrypt.encode(raw); }
+            public boolean matches(CharSequence raw, String hash) {
+                matches.incrementAndGet();
+                return bcrypt.matches(raw, hash);
+            }
+        };
+        org.springframework.security.core.userdetails.UserDetailsService users = name -> {
+            if (!name.equals("demo")) throw new org.springframework.security.core.userdetails.UsernameNotFoundException("not exposed");
+            return org.springframework.security.core.userdetails.User.withUsername("demo").password(encoded).roles("USER").build();
+        };
+        var provider = new org.springframework.security.authentication.dao.DaoAuthenticationProvider(users);
+        provider.setPasswordEncoder(encoder);
+        var manager = new ProviderManager(provider);
+        var gate = new Gatekeeper(GatekeeperTest.policy(100, 1, 1, Policy.Mode.ENFORCE), new BoundedMemoryStore(100));
+        var adapter = new SpringAuthenticationGate(gate, manager);
+        assertTrue(adapter.authenticate(GatekeeperTest.IP,
+            UsernamePasswordAuthenticationToken.unauthenticated("demo", "synthetic-password")).isAuthenticated());
+        assertThrows(BadCredentialsException.class, () -> adapter.authenticate(GatekeeperTest.IP,
+            UsernamePasswordAuthenticationToken.unauthenticated("demo", "wrong")));
+        assertThrows(BadCredentialsException.class, () -> adapter.authenticate(GatekeeperTest.IP,
+            UsernamePasswordAuthenticationToken.unauthenticated("unknown", "wrong")));
+        // Includes Spring's actual dummy password comparison for unknown users.
+        assertEquals(3, matches.get());
+        assertThrows(SpringAuthenticationGate.AdmissionRejectedException.class, () -> adapter.authenticate(GatekeeperTest.IP,
+            UsernamePasswordAuthenticationToken.unauthenticated("demo", "synthetic-password")));
+        assertEquals(3, matches.get()); // Denial did not reach the real provider's encoder.
+        assertEquals(0, gate.metrics().inFlight());
+    }
+
 }

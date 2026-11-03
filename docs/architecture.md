@@ -23,6 +23,12 @@ The proposed integration seam combines source/pair policy, a bounded password-wo
 6. Application verifies credentials and owns MFA/session/authorization. Unknown users require equivalent dummy password work and generic errors.
 7. Shadow mode bypasses policy denials only. Concurrency, store errors, memory capacity and invalid-input safeguards remain enforced. Start shadow with sufficient storage capacity and monitor friction.
 
+## Local state under adversarial saturation
+
+The memory backend uses a capped map and a balanced expiry index containing exactly one node per retained entry. Hash-table backing storage is allocated at construction. Per admission, expiry work checks at most 32 indexed candidates and the two requested keys; index operations are O(log N). Live saturation fails closed without full-map scans or eviction. Expired backlogs drain incrementally. The metadata table and expiry nodes add bounded memory overhead; the synchronized store still serializes operations and makes no real-time latency guarantee.
+
+Clock samples may arrive out of order when concurrent callers sample before acquiring the store lock. Relative deadlines allow those earlier samples, preserve nanoTime wraparound behavior and keep old feedback isolated from replacement windows. The admission contract still requires a server-supplied monotonic clock.
+
 ## Distributed design
 
 Redis may coordinate rate/failure policy across application instances with the same secret, namespace and policy. Atomic Lua scripts use server TIME and Redis expiration generations. Source and source+account keys are in a source-selected shard with the same Cluster hash tag. Per-shard cardinality is capped. No global hash tag; no assertion of cross-shard atomicity. A single hot source is deliberately confined to one shard. Distributed concurrency is not implemented: node-local permits protect each process, and the total cluster budget grows with node count.
